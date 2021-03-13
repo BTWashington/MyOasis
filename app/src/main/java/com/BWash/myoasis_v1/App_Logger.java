@@ -18,7 +18,8 @@ public class App_Logger {
 	private static final String RUN_LOGGER = "Run Logger: ";
 	private static final String END_LOGGER = "End Logger";
 
-	private static final String ON_CREATE_METHOD = "onCreate: ";
+	private static final String ON_CREATE_METHOD = "onCreate Method: ";
+	private static final String VALIDATE_USER_INPUT = "Validate User Input Method: ";
 
 	// Logging Detail Variables
 	private int logID;
@@ -109,6 +110,10 @@ public class App_Logger {
 
 	public static String getOnCreateMethod(){
 		return ON_CREATE_METHOD;
+	}
+
+	public static String getValidateUserInput() {
+		return VALIDATE_USER_INPUT;
 	}
 
 	public int getLogID() {
