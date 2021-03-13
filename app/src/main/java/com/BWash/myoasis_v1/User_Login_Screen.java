@@ -120,7 +120,7 @@ public class User_Login_Screen extends AppCompatActivity {
 		if(name.equals(UserName) && password.equals(Password)){
 			return true;
 		}
-
+		app_logger.endLogger(User_Login_Screen.this, App_Logger.getEndLogger(), App_Logger.getLoginTag());
 		return false;
 	}
 

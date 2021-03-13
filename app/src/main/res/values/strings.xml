@@ -7,4 +7,24 @@
     <string name="btn_login_login">Login</string>
     <string name="tv_login_new_user">New User?  Sign up</string>
     <string name="tv_login_third_party">Third Party Access</string>
+    <string name="et_reg_first_name">Enter First Name</string>
+    <string name="et_reg_last_name">"Enter Last Name "</string>
+    <string name="et_reg_last_name2">Enter Last Name</string>
+    <string name="et_reg_user_name">Enter Desired Username</string>
+    <string name="et_reg_street_address">Enter Garaging Address</string>
+    <string name="et_reg_city">Enter City</string>
+    <string name="et_reg_state">Enter State</string>
+    <string name="et_reg_zip_code">Enter Zip Code</string>
+    <string name="et_reg_territory">Territory</string>
+    <string name="et_reg_email">"Enter Email "</string>
+    <string name="et_reg_email2">"Enter Email "</string>
+    <string name="et_reg_email3">"Enter email "</string>
+    <string name="et_reg_phone">Enter Phone</string>
+    <string name="et_reg_date_of_birth">Enter Date of Birth</string>
+    <string name="et_reg_password">Enter Password</string>
+    <string name="sw_reg_has_vehicle">Do you have a Vehicle?</string>
+    <string name="cb_reg_active_profile">Activate Profile?</string>
+    <string name="tv_reg_profile_number">"Profile Number: "</string>
+    <string name="btn_reg_registration">Register Profile</string>
+    <string name="tv_reg_already_signed_in">Already have a profile? Back to Login</string>
 </resources>

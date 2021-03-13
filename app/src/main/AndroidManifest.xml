@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyOasis_v1">
-        <activity android:name=".User_Login_Screen"></activity>
+        <activity android:name=".User_Registration_Screen"></activity>
+        <activity android:name=".User_Login_Screen" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

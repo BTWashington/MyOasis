@@ -2,6 +2,7 @@ package com.BWash.myoasis_v1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
@@ -13,6 +14,9 @@ public class MainActivity extends AppCompatActivity {
 		app_logger.errorMessage(MainActivity.this, App_Logger.getOnCreateMethod());
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+
+		Intent intent = new Intent(MainActivity.this, User_Login_Screen.class);
+		startActivity(intent);
 
 		app_logger.endLogger(MainActivity.this, App_Logger.getEndLogger(), App_Logger.getMainActivityTag());
 	}
