@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">MyOasis_v1</string>
+    <string name="tv_login_number_of_attempts">No. of Attempts Remaining: 5</string>
+    <string name="tv_login_title">MyOasis</string>
+    <string name="et_login_username">Enter Username</string>
+    <string name="et_login_password">Enter Password</string>
+    <string name="btn_login_login">Login</string>
+    <string name="tv_login_new_user">New User?  Sign up</string>
+    <string name="tv_login_third_party">Third Party Access</string>
 </resources>
