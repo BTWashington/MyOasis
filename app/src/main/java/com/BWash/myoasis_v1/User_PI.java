@@ -2,9 +2,8 @@ package com.BWash.myoasis_v1;
 
 public class User_PI {
 
-
-	//
-	private String id;
+	// PI_NAME_ADDRESS_TABLE
+	private String profile_number;
 	private String first_name;
 	private String last_name;
 	private String UserName;
@@ -13,6 +12,7 @@ public class User_PI {
 	private String state;
 	private int zipCode;
 
+	// PI_SECONDARY_INFO_TABLE
 	private int territory;
 	private String email;
 	private long phone;
@@ -21,6 +21,7 @@ public class User_PI {
 	private boolean hasVehicle;
 	private boolean isActive;
 
+	// PI_TAB_VIEW_ACTIVATE
 	private boolean hasInsurance;
 	private boolean hasWarranty;
 	private boolean hasClaims;
@@ -30,9 +31,9 @@ public class User_PI {
 	public User_PI(){}
 
 	// CONSTRUCTOR USED FOR UPDATING NAME AND PROFILE ADDRESS INFORMATION
-	public User_PI(String id, String first_name, String last_name, String userName,
+	public User_PI(String profile_number, String first_name, String last_name, String userName,
 				   String address_mailing, String city, String state, int zipCode) {
-		this.id = id;
+		this.profile_number = profile_number;
 		this.first_name = first_name;
 		this.last_name = last_name;
 		UserName = userName;
@@ -45,7 +46,7 @@ public class User_PI {
 	// toString() for constructor
 	public String nameAndAddresstoString() {
 		return "User_PI{" +
-				"id='" + id + '\'' +
+				"id='" + profile_number + '\'' +
 				", first_name='" + first_name + '\'' +
 				", last_name='" + last_name + '\'' +
 				", UserName='" + UserName + '\'' +
@@ -86,11 +87,11 @@ public class User_PI {
 	}
 
 	// CONSTRUCTOR USED ON THE REGISTRATION SCREEN -> PARTIALLY PARAMETERIZED CONSTRUCTOR
-	public User_PI(String id, String first_name, String last_name, String userName,
+	public User_PI(String profile_number, String first_name, String last_name, String userName,
 				   String address_mailing, String city, String state, int zipCode, int territory,
 				   String email, long phone, int dateOfBirth, String password, boolean hasVehicle,
 				   boolean isActive) {
-		this.id = id;
+		this.profile_number = profile_number;
 		this.first_name = first_name;
 		this.last_name = last_name;
 		UserName = userName;
@@ -110,7 +111,7 @@ public class User_PI {
 	// toString() for registration profile constructor
 	public String regProfiletoString() {
 		return "User_PI{" +
-				"id='" + id + '\'' +
+				"id='" + profile_number + '\'' +
 				", first_name='" + first_name + '\'' +
 				", last_name='" + last_name + '\'' +
 				", UserName='" + UserName + '\'' +
@@ -129,11 +130,11 @@ public class User_PI {
 	}
 
 	// FULLY PARAMETERIZED CONSTRUCTOR
-	public User_PI(String id, String first_name, String last_name, String userName,
+	public User_PI(String profile_number, String first_name, String last_name, String userName,
 				   String address_mailing, String city, String state, int zipCode, int territory,
 				   String email, long phone, int dateOfBirth, String password, boolean hasVehicle,
 				   boolean hasInsurance, boolean hasWarranty, boolean hasClaims, boolean isActive) {
-		this.id = id;
+		this.profile_number = profile_number;
 		this.first_name = first_name;
 		this.last_name = last_name;
 		UserName = userName;
@@ -157,7 +158,7 @@ public class User_PI {
 	@Override
 	public String toString() {
 		return "User_PI{" +
-				"id='" + id + '\'' +
+				"id='" + profile_number + '\'' +
 				", first_name='" + first_name + '\'' +
 				", last_name='" + last_name + '\'' +
 				", UserName='" + UserName + '\'' +
@@ -178,15 +179,16 @@ public class User_PI {
 				'}';
 	}
 
+	// Class Methods
+
+
 	// Getters and Setters
-
-
-	public String getId() {
-		return id;
+	public String getProfile_number() {
+		return profile_number;
 	}
 
-	public void setId(String id) {
-		this.id = id;
+	public void setProfile_number(String profile_number) {
+		this.profile_number = profile_number;
 	}
 
 	public String getFirst_name() {

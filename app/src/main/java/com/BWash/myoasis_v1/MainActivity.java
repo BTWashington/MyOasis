@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		App_Logger app_logger = new App_Logger();
 		app_logger.runLogger(MainActivity.this, App_Logger.getRunLogger(), App_Logger.getMainActivityTag());
-		app_logger.errorMessage(MainActivity.this, App_Logger.getOnCreateMethod());
+		app_logger.toastMessageToUser(MainActivity.this, App_Logger.getOnCreateMethod());
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 

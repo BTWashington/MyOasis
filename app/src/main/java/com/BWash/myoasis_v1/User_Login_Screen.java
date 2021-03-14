@@ -32,7 +32,7 @@ public class User_Login_Screen extends AppCompatActivity {
 
 		// app logger logs data to the Build screen
 		app_logger.runLogger(User_Login_Screen.this, App_Logger.getRunLogger(), App_Logger.getLoginTag());
-		app_logger.errorMessage(User_Login_Screen.this, App_Logger.getOnCreateMethod());
+		app_logger.toastMessageToUser(User_Login_Screen.this, App_Logger.getOnCreateMethod());
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_user__login__screen);
 
@@ -64,7 +64,7 @@ public class User_Login_Screen extends AppCompatActivity {
 					// Checking to see if the entry was valid or not
 					if(!isValid){
 						counter--;
-						app_logger.errorMessage(User_Login_Screen.this, App_Logger.getLogin_Error());
+						app_logger.toastMessageToUser(User_Login_Screen.this, App_Logger.getLogin_Error_incorrect_password());
 
 						tv_number_of_attempts.setText(attempts);
 
@@ -76,17 +76,10 @@ public class User_Login_Screen extends AppCompatActivity {
 						Toast.makeText(User_Login_Screen.this, "Login Successful", Toast.LENGTH_SHORT).show();
 
 						// Add the code here to go to new activity
-						Intent intent = new Intent(User_Login_Screen.this, Profile_View.class);
+						Intent intent = new Intent(User_Login_Screen.this, User_Profile_View.class);
 						startActivity(intent);
-
-
-
 					}
 				}
-
-
-
-
 			}
 		});
 
@@ -94,7 +87,7 @@ public class User_Login_Screen extends AppCompatActivity {
 			@Override
 			public void onClick(View v) {
 
-				Intent intent = new Intent(User_Login_Screen.this, Registration_Screen.class);
+				Intent intent = new Intent(User_Login_Screen.this, User_Registration_Screen.class);
 				startActivity(intent);
 			}
 		});
@@ -114,10 +107,12 @@ public class User_Login_Screen extends AppCompatActivity {
 	}
 
 	private boolean ValidateUserInput(String name, String password){
+		// Opening Logger -> Shows when the method Begins
 		app_logger.runLogger(User_Login_Screen.this, App_Logger.getRunLogger(), App_Logger.getLoginTag());
-		app_logger.errorMessage(User_Login_Screen.this, App_Logger.getValidateUserInput());
+		app_logger.toastMessageToUser(User_Login_Screen.this, App_Logger.getValidateUserInput());
 
 		if(name.equals(UserName) && password.equals(Password)){
+
 			return true;
 		}
 		app_logger.endLogger(User_Login_Screen.this, App_Logger.getEndLogger(), App_Logger.getLoginTag());

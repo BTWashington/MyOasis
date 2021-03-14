@@ -27,4 +27,23 @@
     <string name="tv_reg_profile_number">"Profile Number: "</string>
     <string name="btn_reg_registration">Register Profile</string>
     <string name="tv_reg_already_signed_in">Already have a profile? Back to Login</string>
+    <string name="tv_pi_view_first_name" />
+    <string name="tv_pi_view_first_name1">First Name</string>
+    <string name="tv_pi_view_last_name">"Last Name "</string>
+    <string name="tv_pi_view_last_name2">Last Name</string>
+    <string name="tv_pi_view_user_name">Username</string>
+    <string name="tv_pi_view_garaging_address">Garaging Address</string>
+    <string name="tv_pi_view_city">City</string>
+    <string name="tv_pi_view_state">State</string>
+    <string name="tv_pi_view_zipcode">Zip Code</string>
+    <string name="tv_pi_view_territory">Territory</string>
+    <string name="cb_pi_view_is_active">Activate Profile</string>
+    <string name="cb_pi_view_has_vehicle">Add a Vehicle</string>
+    <string name="et_pi_view_profile_number">Profile Number</string>
+    <string name="et_pi_view_password">Password</string>
+    <string name="et_pi_view_date_of_birth">Date of Birth</string>
+    <string name="et_pi_view_phone">Phone</string>
+    <string name="et_pi_view_email">"Email "</string>
+    <string name="et_pi_view_email2">Email</string>
+    <string name="et_pi_view_user_name">Username</string>
 </resources>
