@@ -58,12 +58,12 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
     // Lifecycle dependencies
-    implementation "androidx.lifecycle:lifecycle-*:$lifecycle_version"
-    implementation "androidx.lifecycle:lifecycle-common-java8:$lifecycle_version"
-    implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycle_version"
+//    implementation "androidx.lifecycle:lifecycle-*:$lifecycle_version"
+//    implementation "androidx.lifecycle:lifecycle-common-java8:$lifecycle_version"
+//    implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycle_version"
 
     // Livedata dependencies
-    implementation "androidx.lifecycle:lifecycle-*:$lifecycle_version"
+//    implementation "androidx.lifecycle:lifecycle-*:$lifecycle_version"
 
 
 

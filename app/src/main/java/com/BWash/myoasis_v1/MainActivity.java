@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
-		Intent intent = new Intent(MainActivity.this, User_Login_Screen.class);
+		Intent intent = new Intent(MainActivity.this, User_Profile_View.class);
 		startActivity(intent);
 
 		app_logger.endLogger(MainActivity.this, App_Logger.getEndLogger(), App_Logger.getMainActivityTag());

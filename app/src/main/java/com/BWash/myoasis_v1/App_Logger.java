@@ -8,24 +8,35 @@ import java.nio.file.NoSuchFileException;
 import java.security.Timestamp;
 
 public class App_Logger {
-
+	// Main Activity final String Tags
 	private static final String MAIN_ACTIVITY_TAG = "Main Activity: ";
 
+	// Registration Screen final String Tags
 	private static final String Registration_Error = "Registration Error";
 	private static final String REGISTRATION_TAG = "Registration: ";
 
+	// Profile View Screen final String Tags
 	private static final String PROFILE_VIEW_TAG = "Profile View: ";
 	private static final String Profile_Error = "Profile Error";
 	private static final String Profile_Error_Column_Fill = "ERROR";
+	private static final String SETUP_PROFILE_VIEWS ="Profile Views Setup: ";
 
+
+	//------> Profile View Button Clicks
+	private static final String Profile_View_List_Button = "Profile View List Button: ";
+
+
+	// Login Screen final String Tags
 	private static final String LOGIN_TAG = "Login: ";
 	private static final String Login_Error = "Login Error";
 	private static final String Login_Error_incorrect_password = "Login Failed: Incorrect Password";
 	private static final String Login_Successful = "Login Success";
 
+	// App_Loggers Start and End Calls
 	private static final String RUN_LOGGER = "Run Logger: ";
 	private static final String END_LOGGER = "End Logger";
 
+	// Success and Failure Methods Scenarios
 	private static final String ON_CREATE_METHOD = "onCreate Method: ";
 	private static final String VALIDATE_USER_INPUT = "Validate User Input Method: ";
 	private static final String USER_INPUT_VALIDATED = "User input is validated";
@@ -33,6 +44,8 @@ public class App_Logger {
 	private static final String SETUP_UI_VIEWS = "Setup UI Views Method: ";
 	private static final String UI_VIEW_SETUP_SUCCESS = "UI Setup Success";
 	private static final String UI_VIEW_SETUP_FAILURE = "UI Setup Failure";
+	private static final String PROFILE_VIEWS_SUCCESS = "PI View Setup Success";
+	private static final String PROFILE_VIEWS_FAILURE = "PI View Setup Failure";
 
 	// Logging Detail Variables
 	private int logID;
@@ -41,7 +54,8 @@ public class App_Logger {
 	private String methodName;
 	private String description;
 
-
+	// End of Variables and Fields
+//---------------------------------------------------------------------------------------------------
 
 	// Constructors
 	public App_Logger(){}
@@ -154,6 +168,14 @@ public class App_Logger {
 	public static String getUiViewSetupFailure() {
 		return UI_VIEW_SETUP_FAILURE;
 	}
+
+	public static String getProfile_View_List_Button() { return Profile_View_List_Button; }
+
+	public static String getSetupProfileViews() { return SETUP_PROFILE_VIEWS; }
+
+	public static String getProfileViewsSuccess() {	return PROFILE_VIEWS_SUCCESS; }
+
+	public static String getProfileViewsFailure() {	return PROFILE_VIEWS_FAILURE; }
 
 	public int getLogID() {
 		return logID;

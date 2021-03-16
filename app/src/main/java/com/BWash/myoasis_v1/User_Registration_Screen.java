@@ -1,7 +1,6 @@
 package com.BWash.myoasis_v1;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.SwitchCompat;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,12 +10,17 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Switch;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import org.w3c.dom.Text;
+import com.BWash.myoasis_v1.dataItems.User_PI;
+import com.BWash.myoasis_v1.sample.SampleDataProvider;
+
+import java.util.List;
 
 public class User_Registration_Screen extends AppCompatActivity {
 	App_Logger app_logger = new App_Logger();
+
+	// Access to the data in the SampleDataProvider Class
+	List<User_PI> dataItemList = SampleDataProvider.dataItemList;
 
 	// Layout Variables
 	EditText et_reg_first_name,
